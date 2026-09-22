@@ -38,6 +38,11 @@
 
   *{box-sizing:border-box;}
   html,body{margin:0;padding:0;}
+  html{scroll-behavior:smooth;}
+  @media (prefers-reduced-motion:reduce){
+    html{scroll-behavior:auto;}
+  }
+  #palestrantes{scroll-margin-top:24px;}
   body{
     background:var(--navy-deep);
     color:var(--white);
@@ -918,7 +923,7 @@
 
     <p class="tagline">Mais que uma palestra, um novo nível para o seu negócio.</p>
 
-    <a class="cta-btn" href="https://app.lurvia.com.br/q/evento-15-anos-concreto-jau" id="cta-hero">
+    <a class="cta-btn" href="#palestrantes" id="cta-hero">
       Confirmar presença
       <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
     </a>
@@ -963,7 +968,7 @@
   </div>
 </section>
 
-<section class="speakers-section section-pad">
+<section class="speakers-section section-pad" id="palestrantes">
   <div class="wrap">
     <div class="section-head reveal">
       <span class="eyebrow">Palestrantes</span>
@@ -1104,6 +1109,6 @@
       <span class="t1">Vagas limitadas</span>
       <span class="t2">Concreto Jaú 15 anos · 25/09 às 15:30</span>
     </div>
-    <a class="cta-btn" href="https://app.lurvia.com.br/q/evento-15-anos-concreto-jau" id="cta-sticky">Confirmar presença</a>
+    <a class="cta-btn" href="#palestrantes" id="cta-sticky">Confirmar presença</a>
   </div>
 </div>
